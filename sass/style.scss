@@ -1,0 +1,110 @@
+@import "./abstracts/abstracts";
+@import "./vendors/vendors";
+@import "./base/base";
+@import "./components/components";
+@import "./layout/layout";
+@import "./pages/pages";
+@import "./themes/themes";
+@import "settings";
+
+
+.hero {
+    position: relative;
+    background: linear-gradient(90deg, rgba(250, 248, 245, 1) 60%, rgba(169, 214, 203, 1) 60%, rgba(169, 214, 203, 1) 100%);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: $hero-heigth;
+    @include side-padding;
+    .hero-content {
+        padding: 30px 0px;
+        max-width: 54%;
+        h1 {
+            margin-bottom: 25px;
+        }
+        p {
+            margin-bottom: 30px
+        }
+        .hero-content__btns {
+            @include nav-flex;
+            justify-content: start;
+            gap: 30px;
+            .btn.btn--primary {
+                padding: 12px 32px;
+            }
+        }
+    }
+}
+
+.hero::before {
+    content: '';
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    background-image: url('../img/vector-bg.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -3%; right: 17%;
+}
+
+.categories {
+    @include side-padding;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    .categories__container {
+        background-color: white;
+        position: relative;
+        z-index: 4;
+        @include nav-flex;
+        gap:5px;
+        max-width: 44%;
+        top: -100px;
+        article {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            
+        }
+    }
+}
+
+main {
+    position: relative;
+}
+.reviews {
+    position: absolute;
+    z-index: 10;
+    top: 25%; right: 10px;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap:30px;
+        article:first-of-type {
+            align-self: end;
+        }
+        article {
+            max-width: 60%;
+            padding: 15px;
+            background-color:rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(16px);
+            border-radius: 16px;
+        }
+}
+
+.bg-woman {
+    position: absolute;
+    z-index: 7;
+    bottom: 50px; left: 600px;
+    height: 700px;
+    width: 650px;
+    background-image: url('../img/woman-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    
+    
+}

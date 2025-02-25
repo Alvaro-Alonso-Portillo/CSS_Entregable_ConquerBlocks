@@ -1,0 +1,42 @@
+p, a {
+    font-size: $body-font-size;
+}
+
+h1 {
+    font-size: $h1-font-size;
+    color: $color-dark-blue;
+    line-height: 1.2em;
+    font-weight: $poppins-bold;
+}
+
+h3 {
+    font-size: $body-font-size;
+    font-weight: $poppins-regular;
+    color: $color-grey;
+}
+
+.hero-content {
+    p {
+        color: $color-grey;
+        font-size: 20px;
+    }
+}
+
+.categories__hight {
+    color: $color-dark-blue;
+    font-size: 36px;
+    font-weight: $poppins-medium;
+}
+
+.reviews {
+    article {
+        p.description {
+            color: $color-black;
+        }
+        p.user {
+            color: $color-dark-blue;
+            font-weight: $poppins-bold;
+        }
+    }
+}
+

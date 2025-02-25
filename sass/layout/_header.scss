@@ -1,0 +1,58 @@
+.header {
+    ul {
+        list-style: none;
+    }
+    
+    li {
+        a {
+            text-decoration: none;
+            color: $color-dark-blue;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: lighten($color-dark-blue, 15%); 
+                text-decoration: none; 
+            }
+        }
+    }
+}
+
+.header {
+    background: linear-gradient(90deg, rgba(250, 248, 245, 1) 60%, rgba(169, 214, 203, 1) 60%, rgba(169, 214, 203, 1) 100%);
+    @include side-padding;
+    @include nav-flex;
+    justify-content: start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+
+    .nav-primary ul {
+        @include nav-flex;
+        position: relative;
+        left: 40%;
+        gap: 20px;
+
+        .toggle {
+            position: relative;
+            &::after {
+                content: '';
+                background-image: url('../img/toggle.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                position: relative;
+                bottom: -2px;
+                right: -6px;
+            }
+        }
+    }
+
+    .nav-side {
+        margin-left: auto;
+        ul {
+            @include nav-flex;
+            gap: 25px;
+        }
+    }
+}
