@@ -73,4 +73,4 @@ CSS_Entregable/
 
 ¡Gracias por revisar este proyecto! 🎨🔥
 
-Creado con ❤️ por [Alvaro Alonso Portillo]
+Creado con ❤️ por Alvaro Alonso Portillo
